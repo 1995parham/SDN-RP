@@ -151,7 +151,7 @@ body {
 .reveal dl,
 .reveal ul {
     display: inline-block;
-    text-align: left;
+    text-align: right;
     margin: 0 0 0 1em;
     direction: rtl;
 }
