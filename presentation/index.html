@@ -43,7 +43,7 @@
                     <strong>صفحه کنترل</strong>
                     از
                     <strong>صفحه انتفال</strong>
-                    سعی دارد مدیریت شبکه‌های امروزی ساده کرده و تغییر در آن‌ها را امکان پذیر سازد.
+                    سعی دارد مدیریت شبکه‌های امروزی را ساده کرده و تغییر در آن‌ها را امکان پذیر سازد.
                 </p>
             </section>
             <section>
@@ -65,7 +65,7 @@
                 <p>
                     همانطور که ابتدا هم انتظار میرفت جداسازی صفحات کنترل و داده از یکدیگر در شبکه سربار زیادی ایجاد
                     می‌کند و در اینجا هدف کاهش این سربار
-                    از طریف مجازی سازی توابع شبکه‌ای می‌باشد.
+                    از طریق مجازی سازی توابع شبکه‌ای می‌باشد.
                 </p>
             </section>
             <section>
@@ -90,11 +90,10 @@
         <section>
             <h2>روش‌های پیشین</h2>
             <p>
-                در راستای کاهش سربار شبکه‌های نرم افزار بنیان تلاش‌های از طریق مجازی سازی توابع شبکه فعالیت‌های زیادی
-                صروت گرفته است، بستر‌هایی
-                مثل:
+                در راستای کاهش سربار شبکه‌های نرم افزار بنیان از طریق مجازی‌سازی توابع شبکه
+                تلاش‌های بسیاری صورت گرفته است که بستر‌های زیر نمونه‌هایی از این تلاش‌ها هستند:
             </p>
-            <ul>
+            <ul class="english">
                 <li>ClickOS</li>
                 <li>Netmap</li>
                 <li>E2</li>
@@ -111,6 +110,29 @@
             </ul>
         </section>
         <section>
+            <section>
+                <h2>روش پیشنهادی</h2>
+                <span>OpenNetVM</span>
+            </section>
+            <section>
+                <p>
+                    در این روش توابع شبکه‌ای با استفاده از بستر docker مجازی‌سازی میشوند و با استفاده از چهارچوب نرم
+                    افزاری DPDK
+                    ارتباط آن‌ها با کارت‌های شبکه برقرار می‌شود.
+                </p>
+            </section>
+            <section>
+                <p>
+                    یکی از مشکلات بزرگ در استفاده از تکنیک مجازی‌سازی توابع شبکه‌ای
+                    زمان زیاد پردازش بسته‌ها از زمان دریافتشان در کارت شبکه می‌باشد.
+                    راه‌کارهای بسیاری در این زمینه ارائه شده است، که چهارچوب نرم افزاری DPDK
+                    از شرکت intel یکی از این راه‌کارها است که در طی آن بسته‌ها دیگر
+                    توسط سیستم عامل پردازش نمی‌شوند و مستقیما به کاربر می‌رسند.
+                </p>
+            </section>
+            <section>
+                <img src="img/open-netvm-arch.png">
+            </section>
         </section>
         <section>
             <h2>فهرست</h2>
@@ -123,6 +145,15 @@
             </ul>
         </section>
         <section>
+            <section>
+                <img src="img/exp1.png" width="500px">
+            </section>
+            <section>
+                <img src="img/exp2.png" width="500px">
+            </section>
+            <section>
+                <img src="img/exp3.png" width="500px">
+            </section>
         </section>
         <section>
             <h2>فهرست</h2>
@@ -140,6 +171,33 @@
                 در این روش سعی بر بهبود کارآیی شبکه‌های نرم افزار بنیان با استفاده از مجازی‌سازی توابع شبکه بود، که
                 همانطور که بیان شد بسیار موثر بود ولی
                 هنوز هم مشکلاتی در این روش وجود دارد و تحقیقات بسیاری در این زمینه در حال انجام می‌باشد.
+            </p>
+        </section>
+        <section>
+            <h2>منابع</h2>
+            <p class="english">
+                [1] J. Hwang, K. Ramakrishnan, and T. Wood. NetVM: High Performance and Flexible Networking using
+                Virtualization on Commodity Platforms. In Symposium on Networked System Design and Implementation,
+                NSDI 14, Apr. 2014.
+            </p>
+            <p class="english">
+                [2] J. Martins, M. Ahmed, C. Raiciu, V. Olteanu, M. Honda, R. Bifulco,
+                and F. Huici. ClickOS and the Art of Network Function Virtualization.
+                In 11th USENIX Symposium on Networked Systems Design and
+                Implementation (NSDI 14), pages 459–473, Seattle, WA, Apr. 2014.
+                USENIX Association.
+            </p>
+        </section>
+        <section>
+            <h2>منابع</h2>
+            <p class="english">
+                [3] S. Palkar, C. Lan, S. Han, K. Jang, A. Panda, S. Ratnasamy, L. Rizzo,
+                and S. Shenker. E2: A Framework for NFV Applications. In Proceedings
+                of the 25th Symposium on Operating Systems Principles, SOSP
+                ’15, pages 121–136, New York, NY, USA, 2015. ACM.
+            </p>
+            <p class="english">
+                [4] Intel. Data plane development kit
             </p>
         </section>
     </div>
